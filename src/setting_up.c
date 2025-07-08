@@ -8,11 +8,14 @@
 #include "setting_up.h"
 
 /**
- * @brief Calcule la valeur minimale autour d'une position dans la map et met à jour indian_map.
+ * @brief Met à jour @p indian_map pour la position donnée.
+ *
+ * Calcule la taille du plus grand carré terminant à la position @p pos en se
+ * basant sur les valeurs voisines du tableau.
  *
  * @param map Structure map
- * @param pos Position courante
- * @param indian_map Tableau de valeurs pour le calcul
+ * @param pos Position courante dans la chaîne de la map
+ * @param indian_map Tableau de travail contenant les tailles calculées
  * @return 0
  */
 static int indian(map_t *map, size_t pos, size_t *indian_map)
@@ -37,10 +40,11 @@ static int indian(map_t *map, size_t pos, size_t *indian_map)
 }
 
 /**
- * @brief Trouve la plus grande valeur dans indian_map et met à jour la position et la taille dans map.
+ * @brief Cherche la valeur maximale calculée dans @p indian_map et en déduit la
+ *        position du plus grand carré.
  *
  * @param map Structure map
- * @param indian_map Tableau de valeurs
+ * @param indian_map Tableau des tailles calculées
  * @return 0
  */
 static int find_indian_bigger_pos(map_t *map, size_t *indian_map)
@@ -67,7 +71,7 @@ static int find_indian_bigger_pos(map_t *map, size_t *indian_map)
 }
 
 /**
- * @brief Place le plus grand carré trouvé dans la map en remplaçant les caractères par 'x'.
+ * @brief Remplace par 'x' toutes les cases du plus grand carré détecté.
  *
  * @param map Structure map
  * @return 0
@@ -83,7 +87,8 @@ static int put_carre(map_t *map)
 }
 
 /**
- * @brief Trouve la première position disponible dans la map et initialise la taille du carré à 1.
+ * @brief Cherche la première case libre afin d'initialiser un carré de taille
+ *        1 lorsque la carte est trop petite.
  *
  * @param map Structure map
  * @return 0
@@ -100,7 +105,8 @@ static int one_one(map_t *map)
 }
 
 /**
- * @brief Initialise les valeurs de indian_map à 0 et réinitialise la position et la taille du carré dans map.
+ * @brief Réinitialise le tableau de travail et les informations sur le plus
+ *        grand carré trouvé.
  *
  * @param map Structure map
  * @param indian_map Tableau de valeurs
@@ -116,7 +122,8 @@ static int aux(map_t *map, size_t *indian_map)
 }
 
 /**
- * @brief Fonction principale pour configurer la map : calcule les tailles de carré possibles et place le plus grand carré.
+ * @brief Algorithme principal : calcule les tailles de carré possibles et
+ *        place le plus grand dans la carte.
  *
  * @param map Structure map
  * @return 0

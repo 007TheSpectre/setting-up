@@ -29,7 +29,8 @@ typedef struct map_s {
 } map_t;
 
 /**
- * @brief Résout le problème principal sur la map.
+ * @brief Détermine le plus grand carré de '.' dans la map et le marque.
+ *
  * @param map Structure map à traiter
  * @return 0 en cas de succès, code d'erreur sinon
  */
@@ -47,10 +48,10 @@ int set_map_map(map_t *map,
     char **argv, char *buffer, struct stat *filestat);
 
 /**
- * @brief Initialise la map à partir d'un pattern.
+ * @brief Crée une map carrée en répétant un motif.
  * @param map Structure map à remplir
  * @param size Taille de la map
- * @param pattern Pattern à utiliser
+ * @param pattern Motif à utiliser
  * @return 0 en cas de succès, code d'erreur sinon
  */
 int set_map_pattern(map_t *map, char *size, char *pattern);

@@ -8,12 +8,12 @@
 #include "setting_up.h"
 
 /**
- * @brief Copie le contenu d'un fichier dans un buffer.
+ * @brief Copie le contenu d'un fichier dans le buffer fourni.
  *
- * @param argv Arguments du programme
- * @param buffer Buffer à remplir
+ * @param argv Arguments du programme (argv[1] doit contenir le nom du fichier)
+ * @param buffer Zone mémoire déjà allouée pour recevoir les données
  * @param filestat Statistiques du fichier
- * @return 0 en cas de succès, code d'erreur sinon
+ * @return 0 si la lecture réussit, 84 sinon
  */
 static int cpy_buffer(char **argv, char *buffer, struct stat *filestat)
 {
@@ -37,10 +37,14 @@ static int cpy_buffer(char **argv, char *buffer, struct stat *filestat)
 }
 
 /**
- * @brief Vérifie si le buffer contient une map valide.
+ * @brief Vérifie que le contenu du buffer correspond au format attendu d'une
+ *        map BSQ.
+ *
+ * La première ligne doit être numérique et définir la hauteur. Le reste du
+ * buffer doit être composé uniquement de '.' ou 'o' et de retours à la ligne.
  *
  * @param buffer Buffer à vérifier
- * @return 0 si valide, code d'erreur sinon
+ * @return 0 si valide, 84 sinon
  */
 static int map_is_correct(char *buffer)
 {
@@ -58,11 +62,14 @@ static int map_is_correct(char *buffer)
 }
 
 /**
- * @brief Remplit la structure map à partir du buffer.
+ * @brief Copie les données du buffer dans la structure map déjà allouée.
+ *
+ *        La largeur est calculée à partir de la première ligne puis la map est
+ *        recopiée telle quelle dans @c map->map.
  *
  * @param map Structure map à remplir
  * @param buffer Buffer source
- * @return 0 en cas de succès, code d'erreur sinon
+ * @return 0 en cas de succès, 84 sinon
  */
 static int set_map_aux(map_t *map, char *buffer)
 {
@@ -84,11 +91,14 @@ static int set_map_aux(map_t *map, char *buffer)
 }
 
 /**
- * @brief Définit la carte à partir du buffer.
+ * @brief Analyse le buffer et remplit la structure map.
+ *
+ * La première ligne du buffer est interprétée pour récupérer la hauteur de la
+ * map. Les lignes suivantes sont copiées dans @c map->map.
  *
  * @param map Structure map à remplir
  * @param buffer Buffer source
- * @return 0 en cas de succès, code d'erreur sinon
+ * @return 0 en cas de succès, 84 sinon
  */
 static int set_map(map_t *map, char *buffer)
 {
@@ -108,12 +118,12 @@ static int set_map(map_t *map, char *buffer)
 }
 
 /**
- * @brief Définit le motif de la carte.
+ * @brief Génère une carte carrée à partir d'un motif répété.
  *
  * @param map Structure map à remplir
- * @param size Taille de la carte
- * @param pattern Motif à utiliser
- * @return 0 en cas de succès, code d'erreur sinon
+ * @param size Taille de la carte (hauteur et largeur identiques)
+ * @param pattern Motif à répliquer dans la carte
+ * @return 0 en cas de succès, 84 sinon
  */
 int set_map_pattern(map_t *map, char *size, char *pattern)
 {
@@ -140,13 +150,13 @@ int set_map_pattern(map_t *map, char *size, char *pattern)
 }
 
 /**
- * @brief Définit la carte à partir d'un fichier.
+ * @brief Charge une carte depuis un fichier.
  *
  * @param map Structure map à remplir
  * @param argv Arguments du programme
  * @param buffer Buffer à remplir
  * @param filestat Statistiques du fichier
- * @return 0 en cas de succès, code d'erreur sinon
+ * @return 0 en cas de succès, 84 sinon
  */
 int set_map_map(map_t *map,
     char **argv, char *buffer, struct stat *filestat)

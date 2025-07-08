@@ -8,10 +8,10 @@
 #include "setting_up.h"
 
 /**
- * @brief Vérifie si la chaîne passée est un pattern valide (composée uniquement de '.' et 'o').
+ * @brief Vérifie que la chaîne fournie ne contient que les caractères '.' ou 'o'.
  *
- * @param pattern Chaîne à vérifier
- * @return 1 si valide, 0 sinon
+ * @param pattern Chaîne à analyser
+ * @return 1 si la chaîne est valide, 0 sinon
  */
 static int is_pattern(char *pattern)
 {
@@ -22,13 +22,15 @@ static int is_pattern(char *pattern)
 }
 
 /**
- * @brief Gère les erreurs d'arguments et prépare le buffer selon l'entrée (fichier ou pattern).
+ * @brief Valide les arguments et réserve le buffer adapté selon que l'entrée
+ *        est un fichier ou un motif à générer.
  *
  * @param argc Nombre d'arguments
  * @param argv Tableau d'arguments
  * @param buffer Pointeur vers le buffer à allouer
- * @param filestat Structure stat pour le fichier
- * @return 1 si pattern, 0 si fichier, 84 en cas d'erreur
+ * @param filestat Informations sur le fichier à lire
+ * @return 1 si un motif doit être généré, 0 si un fichier est utilisé, 84 en
+ *         cas d'erreur
  */
 int error_handling(int argc, char **argv, char **buffer, struct stat *filestat)
 {
@@ -70,7 +72,10 @@ static void free_data(char *buffer, map_t *map)
 }
 
 /**
- * @brief Fonction auxiliaire principale pour initialiser la map selon l'entrée.
+ * @brief Initialise la structure map en fonction des arguments reçus.
+ *
+ *        Selon les paramètres, la carte est lue depuis un fichier ou bien
+ *        générée à partir d'un motif.
  *
  * @param map Structure map à remplir
  * @param argc Nombre d'arguments
@@ -96,6 +101,9 @@ int main_aux(map_t *map, int argc, char **argv, char **buffer)
 
 /**
  * @brief Point d'entrée principal du programme.
+ *
+ *        Alloue la structure principale, lance l'initialisation de la map puis
+ *        exécute l'algorithme de résolution.
  *
  * @param argc Nombre d'arguments
  * @param argv Tableau d'arguments
