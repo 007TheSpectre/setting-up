@@ -1,0 +1,91 @@
+\hypertarget{main_8c}{}\doxysection{src/main.c File Reference}
+\label{main_8c}\index{src/main.c@{src/main.c}}
+{\ttfamily \#include \char`\"{}setting\+\_\+up.\+h\char`\"{}}\newline
+Include dependency graph for main.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8c_a2620b0256ad925cc1a2c353770d87754}{error\+\_\+handling}} (int argc, char $\ast$$\ast$argv, char $\ast$$\ast$buffer, struct stat $\ast$filestat)
+\begin{DoxyCompactList}\small\item\em Valide les arguments et réserve le buffer adapté selon que l\textquotesingle{}entrée est un fichier ou un motif à générer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_af14244262d9d64709e2e5a4e31f7e217}{main\+\_\+aux}} (\mbox{\hyperlink{setting__up_8h_ae80c6c8b9f9e5f88c65337bb1cd2eb65}{map\+\_\+t}} $\ast$map, int argc, char $\ast$$\ast$argv, char $\ast$$\ast$buffer)
+\begin{DoxyCompactList}\small\item\em Initialise la structure map en fonction des arguments reçus. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Point d\textquotesingle{}entrée principal du programme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a2620b0256ad925cc1a2c353770d87754}\label{main_8c_a2620b0256ad925cc1a2c353770d87754}} 
+\index{main.c@{main.c}!error\_handling@{error\_handling}}
+\index{error\_handling@{error\_handling}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{error\_handling()}{error\_handling()}}
+{\footnotesize\ttfamily int error\+\_\+handling (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv,  }\item[{char $\ast$$\ast$}]{buffer,  }\item[{struct stat $\ast$}]{filestat }\end{DoxyParamCaption})}
+
+
+
+Valide les arguments et réserve le buffer adapté selon que l\textquotesingle{}entrée est un fichier ou un motif à générer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Nombre d\textquotesingle{}arguments \\
+\hline
+{\em argv} & Tableau d\textquotesingle{}arguments \\
+\hline
+{\em buffer} & Pointeur vers le buffer à allouer \\
+\hline
+{\em filestat} & Informations sur le fichier à lire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si un motif doit être généré, 0 si un fichier est utilisé, 84 en cas d\textquotesingle{}erreur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Point d\textquotesingle{}entrée principal du programme. 
+
+\begin{DoxyVerb}   Alloue la structure principale, lance l'initialisation de la map puis
+   exécute l'algorithme de résolution.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em argc} & Nombre d\textquotesingle{}arguments \\
+\hline
+{\em argv} & Tableau d\textquotesingle{}arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, 84 en cas d\textquotesingle{}erreur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8c_af14244262d9d64709e2e5a4e31f7e217}\label{main_8c_af14244262d9d64709e2e5a4e31f7e217}} 
+\index{main.c@{main.c}!main\_aux@{main\_aux}}
+\index{main\_aux@{main\_aux}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main\_aux()}{main\_aux()}}
+{\footnotesize\ttfamily int main\+\_\+aux (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{setting__up_8h_ae80c6c8b9f9e5f88c65337bb1cd2eb65}{map\+\_\+t}} $\ast$}]{map,  }\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv,  }\item[{char $\ast$$\ast$}]{buffer }\end{DoxyParamCaption})}
+
+
+
+Initialise la structure map en fonction des arguments reçus. 
+
+\begin{DoxyVerb}   Selon les paramètres, la carte est lue depuis un fichier ou bien
+   générée à partir d'un motif.
+\end{DoxyVerb}
+ 
+\begin{DoxyParams}{Parameters}
+{\em map} & Structure map à remplir \\
+\hline
+{\em argc} & Nombre d\textquotesingle{}arguments \\
+\hline
+{\em argv} & Tableau d\textquotesingle{}arguments \\
+\hline
+{\em buffer} & Pointeur vers le buffer à allouer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, 84 en cas d\textquotesingle{}erreur 
+\end{DoxyReturn}

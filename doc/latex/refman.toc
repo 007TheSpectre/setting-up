@@ -1,0 +1,72 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Data Structure Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Data Structures}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Data Structure Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}map\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}s Struct Reference}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Field Documentation}{5}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}bigger\_pos}{5}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}bigger\_size}{6}{subsubsection.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}height}{6}{subsubsection.3.1.2.3}%
+\contentsline {subsubsection}{\numberline {3.1.2.4}map}{6}{subsubsection.3.1.2.4}%
+\contentsline {subsubsection}{\numberline {3.1.2.5}width}{6}{subsubsection.3.1.2.5}%
+\contentsline {chapter}{\numberline {4}File Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}include/my.h File Reference}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Function Documentation}{8}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}my\_compute\_power\_rec()}{8}{subsubsection.4.1.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.2}my\_compute\_square\_root()}{9}{subsubsection.4.1.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.1.3}my\_find\_prime\_sup()}{9}{subsubsection.4.1.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.1.4}my\_getnbr()}{9}{subsubsection.4.1.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.1.5}my\_is\_prime()}{9}{subsubsection.4.1.1.5}%
+\contentsline {subsubsection}{\numberline {4.1.1.6}my\_isneg()}{9}{subsubsection.4.1.1.6}%
+\contentsline {subsubsection}{\numberline {4.1.1.7}my\_put\_error()}{9}{subsubsection.4.1.1.7}%
+\contentsline {subsubsection}{\numberline {4.1.1.8}my\_put\_nbr()}{10}{subsubsection.4.1.1.8}%
+\contentsline {subsubsection}{\numberline {4.1.1.9}my\_putchar()}{10}{subsubsection.4.1.1.9}%
+\contentsline {subsubsection}{\numberline {4.1.1.10}my\_putstr()}{10}{subsubsection.4.1.1.10}%
+\contentsline {subsubsection}{\numberline {4.1.1.11}my\_revstr()}{10}{subsubsection.4.1.1.11}%
+\contentsline {subsubsection}{\numberline {4.1.1.12}my\_showmem()}{10}{subsubsection.4.1.1.12}%
+\contentsline {subsubsection}{\numberline {4.1.1.13}my\_showstr()}{11}{subsubsection.4.1.1.13}%
+\contentsline {subsubsection}{\numberline {4.1.1.14}my\_sort\_int\_array()}{11}{subsubsection.4.1.1.14}%
+\contentsline {subsubsection}{\numberline {4.1.1.15}my\_str\_isalpha()}{11}{subsubsection.4.1.1.15}%
+\contentsline {subsubsection}{\numberline {4.1.1.16}my\_str\_islower()}{11}{subsubsection.4.1.1.16}%
+\contentsline {subsubsection}{\numberline {4.1.1.17}my\_str\_isnum()}{11}{subsubsection.4.1.1.17}%
+\contentsline {subsubsection}{\numberline {4.1.1.18}my\_str\_isprintable()}{12}{subsubsection.4.1.1.18}%
+\contentsline {subsubsection}{\numberline {4.1.1.19}my\_str\_isupper()}{12}{subsubsection.4.1.1.19}%
+\contentsline {subsubsection}{\numberline {4.1.1.20}my\_str\_to\_word\_array()}{12}{subsubsection.4.1.1.20}%
+\contentsline {subsubsection}{\numberline {4.1.1.21}my\_strcapitalize()}{12}{subsubsection.4.1.1.21}%
+\contentsline {subsubsection}{\numberline {4.1.1.22}my\_strcat()}{12}{subsubsection.4.1.1.22}%
+\contentsline {subsubsection}{\numberline {4.1.1.23}my\_strcmp()}{13}{subsubsection.4.1.1.23}%
+\contentsline {subsubsection}{\numberline {4.1.1.24}my\_strcpy()}{13}{subsubsection.4.1.1.24}%
+\contentsline {subsubsection}{\numberline {4.1.1.25}my\_strdup()}{13}{subsubsection.4.1.1.25}%
+\contentsline {subsubsection}{\numberline {4.1.1.26}my\_strlen()}{13}{subsubsection.4.1.1.26}%
+\contentsline {subsubsection}{\numberline {4.1.1.27}my\_strlowcase()}{13}{subsubsection.4.1.1.27}%
+\contentsline {subsubsection}{\numberline {4.1.1.28}my\_strncat()}{14}{subsubsection.4.1.1.28}%
+\contentsline {subsubsection}{\numberline {4.1.1.29}my\_strncmp()}{14}{subsubsection.4.1.1.29}%
+\contentsline {subsubsection}{\numberline {4.1.1.30}my\_strncpy()}{14}{subsubsection.4.1.1.30}%
+\contentsline {subsubsection}{\numberline {4.1.1.31}my\_strstr()}{14}{subsubsection.4.1.1.31}%
+\contentsline {subsubsection}{\numberline {4.1.1.32}my\_strupcase()}{14}{subsubsection.4.1.1.32}%
+\contentsline {subsubsection}{\numberline {4.1.1.33}my\_swap()}{15}{subsubsection.4.1.1.33}%
+\contentsline {section}{\numberline {4.2}my.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.3}include/setting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}up.h File Reference}{15}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Typedef Documentation}{16}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}map\_t}{16}{subsubsection.4.3.1.1}%
+\contentsline {subsection}{\numberline {4.3.2}Function Documentation}{16}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}set\_map\_map()}{16}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}set\_map\_pattern()}{17}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}setting\_up()}{18}{subsubsection.4.3.2.3}%
+\contentsline {section}{\numberline {4.4}setting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}up.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{18}{section.4.4}%
+\contentsline {section}{\numberline {4.5}src/main.c File Reference}{19}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Function Documentation}{19}{subsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.1.1}error\_handling()}{19}{subsubsection.4.5.1.1}%
+\contentsline {subsubsection}{\numberline {4.5.1.2}main()}{20}{subsubsection.4.5.1.2}%
+\contentsline {subsubsection}{\numberline {4.5.1.3}main\_aux()}{20}{subsubsection.4.5.1.3}%
+\contentsline {section}{\numberline {4.6}src/set\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}map.c File Reference}{21}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Function Documentation}{21}{subsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.1.1}set\_map\_map()}{21}{subsubsection.4.6.1.1}%
+\contentsline {subsubsection}{\numberline {4.6.1.2}set\_map\_pattern()}{22}{subsubsection.4.6.1.2}%
+\contentsline {section}{\numberline {4.7}src/setting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}up.c File Reference}{22}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Function Documentation}{22}{subsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.1.1}setting\_up()}{22}{subsubsection.4.7.1.1}%
+\contentsline {chapter}{Index}{25}{section*.9}%

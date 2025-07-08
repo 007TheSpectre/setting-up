@@ -1,0 +1,153 @@
+\hypertarget{setting__up_8h}{}\doxysection{include/setting\+\_\+up.h File Reference}
+\label{setting__up_8h}\index{include/setting\_up.h@{include/setting\_up.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}my.\+h\char`\"{}}\newline
+Include dependency graph for setting\+\_\+up.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmap__s}{map\+\_\+s}}
+\begin{DoxyCompactList}\small\item\em Structure représentant la map et ses propriétés. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structmap__s}{map\+\_\+s}} \mbox{\hyperlink{setting__up_8h_ae80c6c8b9f9e5f88c65337bb1cd2eb65}{map\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Structure représentant la map et ses propriétés. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{setting__up_8h_a5154e75436e3a82185eb758c1bb6ff01}{setting\+\_\+up}} (\mbox{\hyperlink{setting__up_8h_ae80c6c8b9f9e5f88c65337bb1cd2eb65}{map\+\_\+t}} $\ast$map)
+\begin{DoxyCompactList}\small\item\em Détermine le plus grand carré de \textquotesingle{}.\textquotesingle{} dans la map et le marque. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{setting__up_8h_a10a27bf42c782384a7c4eecb08c91c97}{set\+\_\+map\+\_\+map}} (\mbox{\hyperlink{setting__up_8h_ae80c6c8b9f9e5f88c65337bb1cd2eb65}{map\+\_\+t}} $\ast$map, char $\ast$$\ast$argv, char $\ast$buffer, struct stat $\ast$filestat)
+\begin{DoxyCompactList}\small\item\em Initialise la map à partir d\textquotesingle{}un fichier. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{setting__up_8h_a2e1c0cb4f6d4c13b148b252667814b0d}{set\+\_\+map\+\_\+pattern}} (\mbox{\hyperlink{setting__up_8h_ae80c6c8b9f9e5f88c65337bb1cd2eb65}{map\+\_\+t}} $\ast$map, char $\ast$size, char $\ast$pattern)
+\begin{DoxyCompactList}\small\item\em Crée une map carrée en répétant un motif. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{setting__up_8h_ae80c6c8b9f9e5f88c65337bb1cd2eb65}\label{setting__up_8h_ae80c6c8b9f9e5f88c65337bb1cd2eb65}} 
+\index{setting\_up.h@{setting\_up.h}!map\_t@{map\_t}}
+\index{map\_t@{map\_t}!setting\_up.h@{setting\_up.h}}
+\doxysubsubsection{\texorpdfstring{map\_t}{map\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structmap__s}{map\+\_\+s}} \mbox{\hyperlink{setting__up_8h_ae80c6c8b9f9e5f88c65337bb1cd2eb65}{map\+\_\+t}}}
+
+
+
+Structure représentant la map et ses propriétés. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{setting__up_8h_a10a27bf42c782384a7c4eecb08c91c97}\label{setting__up_8h_a10a27bf42c782384a7c4eecb08c91c97}} 
+\index{setting\_up.h@{setting\_up.h}!set\_map\_map@{set\_map\_map}}
+\index{set\_map\_map@{set\_map\_map}!setting\_up.h@{setting\_up.h}}
+\doxysubsubsection{\texorpdfstring{set\_map\_map()}{set\_map\_map()}}
+{\footnotesize\ttfamily int set\+\_\+map\+\_\+map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{setting__up_8h_ae80c6c8b9f9e5f88c65337bb1cd2eb65}{map\+\_\+t}} $\ast$}]{map,  }\item[{char $\ast$$\ast$}]{argv,  }\item[{char $\ast$}]{buffer,  }\item[{struct stat $\ast$}]{filestat }\end{DoxyParamCaption})}
+
+
+
+Initialise la map à partir d\textquotesingle{}un fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Structure map à remplir \\
+\hline
+{\em argv} & Arguments du programme \\
+\hline
+{\em buffer} & Buffer source \\
+\hline
+{\em filestat} & Statistiques du fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, code d\textquotesingle{}erreur sinon
+\end{DoxyReturn}
+Initialise la map à partir d\textquotesingle{}un fichier.
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Structure map à remplir \\
+\hline
+{\em argv} & Arguments du programme \\
+\hline
+{\em buffer} & Buffer à remplir \\
+\hline
+{\em filestat} & Statistiques du fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, 84 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{setting__up_8h_a2e1c0cb4f6d4c13b148b252667814b0d}\label{setting__up_8h_a2e1c0cb4f6d4c13b148b252667814b0d}} 
+\index{setting\_up.h@{setting\_up.h}!set\_map\_pattern@{set\_map\_pattern}}
+\index{set\_map\_pattern@{set\_map\_pattern}!setting\_up.h@{setting\_up.h}}
+\doxysubsubsection{\texorpdfstring{set\_map\_pattern()}{set\_map\_pattern()}}
+{\footnotesize\ttfamily int set\+\_\+map\+\_\+pattern (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{setting__up_8h_ae80c6c8b9f9e5f88c65337bb1cd2eb65}{map\+\_\+t}} $\ast$}]{map,  }\item[{char $\ast$}]{size,  }\item[{char $\ast$}]{pattern }\end{DoxyParamCaption})}
+
+
+
+Crée une map carrée en répétant un motif. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Structure map à remplir \\
+\hline
+{\em size} & Taille de la map \\
+\hline
+{\em pattern} & Motif à utiliser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, code d\textquotesingle{}erreur sinon
+\end{DoxyReturn}
+Crée une map carrée en répétant un motif.
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Structure map à remplir \\
+\hline
+{\em size} & Taille de la carte (hauteur et largeur identiques) \\
+\hline
+{\em pattern} & Motif à répliquer dans la carte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, 84 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{setting__up_8h_a5154e75436e3a82185eb758c1bb6ff01}\label{setting__up_8h_a5154e75436e3a82185eb758c1bb6ff01}} 
+\index{setting\_up.h@{setting\_up.h}!setting\_up@{setting\_up}}
+\index{setting\_up@{setting\_up}!setting\_up.h@{setting\_up.h}}
+\doxysubsubsection{\texorpdfstring{setting\_up()}{setting\_up()}}
+{\footnotesize\ttfamily int setting\+\_\+up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{setting__up_8h_ae80c6c8b9f9e5f88c65337bb1cd2eb65}{map\+\_\+t}} $\ast$}]{map }\end{DoxyParamCaption})}
+
+
+
+Détermine le plus grand carré de \textquotesingle{}.\textquotesingle{} dans la map et le marque. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Structure map à traiter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 en cas de succès, code d\textquotesingle{}erreur sinon
+\end{DoxyReturn}
+Détermine le plus grand carré de \textquotesingle{}.\textquotesingle{} dans la map et le marque.
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Structure map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}

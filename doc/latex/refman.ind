@@ -1,0 +1,174 @@
+\begin{theindex}
+
+  \item {bigger\_pos}
+    \subitem {map\_s}, \hyperpage{5}
+  \item {bigger\_size}
+    \subitem {map\_s}, \hyperpage{5}
+
+  \indexspace
+
+  \item {error\_handling}
+    \subitem {main.c}, \hyperpage{19}
+
+  \indexspace
+
+  \item {height}
+    \subitem {map\_s}, \hyperpage{6}
+
+  \indexspace
+
+  \item {include/my.h}, \hyperpage{7}, \hyperpage{15}
+  \item {include/setting\_up.h}, \hyperpage{15}, \hyperpage{18}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.c}, \hyperpage{19}
+  \item {main.c}
+    \subitem {error\_handling}, \hyperpage{19}
+    \subitem {main}, \hyperpage{19}
+    \subitem {main\_aux}, \hyperpage{20}
+  \item {main\_aux}
+    \subitem {main.c}, \hyperpage{20}
+  \item {map}
+    \subitem {map\_s}, \hyperpage{6}
+  \item {map\_s}, \hyperpage{5}
+    \subitem {bigger\_pos}, \hyperpage{5}
+    \subitem {bigger\_size}, \hyperpage{5}
+    \subitem {height}, \hyperpage{6}
+    \subitem {map}, \hyperpage{6}
+    \subitem {width}, \hyperpage{6}
+  \item {map\_t}
+    \subitem {setting\_up.h}, \hyperpage{16}
+  \item {my.h}
+    \subitem {my\_compute\_power\_rec}, \hyperpage{8}
+    \subitem {my\_compute\_square\_root}, \hyperpage{8}
+    \subitem {my\_find\_prime\_sup}, \hyperpage{9}
+    \subitem {my\_getnbr}, \hyperpage{9}
+    \subitem {my\_is\_prime}, \hyperpage{9}
+    \subitem {my\_isneg}, \hyperpage{9}
+    \subitem {my\_put\_error}, \hyperpage{9}
+    \subitem {my\_put\_nbr}, \hyperpage{9}
+    \subitem {my\_putchar}, \hyperpage{10}
+    \subitem {my\_putstr}, \hyperpage{10}
+    \subitem {my\_revstr}, \hyperpage{10}
+    \subitem {my\_showmem}, \hyperpage{10}
+    \subitem {my\_showstr}, \hyperpage{10}
+    \subitem {my\_sort\_int\_array}, \hyperpage{11}
+    \subitem {my\_str\_isalpha}, \hyperpage{11}
+    \subitem {my\_str\_islower}, \hyperpage{11}
+    \subitem {my\_str\_isnum}, \hyperpage{11}
+    \subitem {my\_str\_isprintable}, \hyperpage{11}
+    \subitem {my\_str\_isupper}, \hyperpage{12}
+    \subitem {my\_str\_to\_word\_array}, \hyperpage{12}
+    \subitem {my\_strcapitalize}, \hyperpage{12}
+    \subitem {my\_strcat}, \hyperpage{12}
+    \subitem {my\_strcmp}, \hyperpage{12}
+    \subitem {my\_strcpy}, \hyperpage{13}
+    \subitem {my\_strdup}, \hyperpage{13}
+    \subitem {my\_strlen}, \hyperpage{13}
+    \subitem {my\_strlowcase}, \hyperpage{13}
+    \subitem {my\_strncat}, \hyperpage{13}
+    \subitem {my\_strncmp}, \hyperpage{14}
+    \subitem {my\_strncpy}, \hyperpage{14}
+    \subitem {my\_strstr}, \hyperpage{14}
+    \subitem {my\_strupcase}, \hyperpage{14}
+    \subitem {my\_swap}, \hyperpage{14}
+  \item {my\_compute\_power\_rec}
+    \subitem {my.h}, \hyperpage{8}
+  \item {my\_compute\_square\_root}
+    \subitem {my.h}, \hyperpage{8}
+  \item {my\_find\_prime\_sup}
+    \subitem {my.h}, \hyperpage{9}
+  \item {my\_getnbr}
+    \subitem {my.h}, \hyperpage{9}
+  \item {my\_is\_prime}
+    \subitem {my.h}, \hyperpage{9}
+  \item {my\_isneg}
+    \subitem {my.h}, \hyperpage{9}
+  \item {my\_put\_error}
+    \subitem {my.h}, \hyperpage{9}
+  \item {my\_put\_nbr}
+    \subitem {my.h}, \hyperpage{9}
+  \item {my\_putchar}
+    \subitem {my.h}, \hyperpage{10}
+  \item {my\_putstr}
+    \subitem {my.h}, \hyperpage{10}
+  \item {my\_revstr}
+    \subitem {my.h}, \hyperpage{10}
+  \item {my\_showmem}
+    \subitem {my.h}, \hyperpage{10}
+  \item {my\_showstr}
+    \subitem {my.h}, \hyperpage{10}
+  \item {my\_sort\_int\_array}
+    \subitem {my.h}, \hyperpage{11}
+  \item {my\_str\_isalpha}
+    \subitem {my.h}, \hyperpage{11}
+  \item {my\_str\_islower}
+    \subitem {my.h}, \hyperpage{11}
+  \item {my\_str\_isnum}
+    \subitem {my.h}, \hyperpage{11}
+  \item {my\_str\_isprintable}
+    \subitem {my.h}, \hyperpage{11}
+  \item {my\_str\_isupper}
+    \subitem {my.h}, \hyperpage{12}
+  \item {my\_str\_to\_word\_array}
+    \subitem {my.h}, \hyperpage{12}
+  \item {my\_strcapitalize}
+    \subitem {my.h}, \hyperpage{12}
+  \item {my\_strcat}
+    \subitem {my.h}, \hyperpage{12}
+  \item {my\_strcmp}
+    \subitem {my.h}, \hyperpage{12}
+  \item {my\_strcpy}
+    \subitem {my.h}, \hyperpage{13}
+  \item {my\_strdup}
+    \subitem {my.h}, \hyperpage{13}
+  \item {my\_strlen}
+    \subitem {my.h}, \hyperpage{13}
+  \item {my\_strlowcase}
+    \subitem {my.h}, \hyperpage{13}
+  \item {my\_strncat}
+    \subitem {my.h}, \hyperpage{13}
+  \item {my\_strncmp}
+    \subitem {my.h}, \hyperpage{14}
+  \item {my\_strncpy}
+    \subitem {my.h}, \hyperpage{14}
+  \item {my\_strstr}
+    \subitem {my.h}, \hyperpage{14}
+  \item {my\_strupcase}
+    \subitem {my.h}, \hyperpage{14}
+  \item {my\_swap}
+    \subitem {my.h}, \hyperpage{14}
+
+  \indexspace
+
+  \item {set\_map.c}
+    \subitem {set\_map\_map}, \hyperpage{21}
+    \subitem {set\_map\_pattern}, \hyperpage{21}
+  \item {set\_map\_map}
+    \subitem {set\_map.c}, \hyperpage{21}
+    \subitem {setting\_up.h}, \hyperpage{16}
+  \item {set\_map\_pattern}
+    \subitem {set\_map.c}, \hyperpage{21}
+    \subitem {setting\_up.h}, \hyperpage{17}
+  \item {setting\_up}
+    \subitem {setting\_up.c}, \hyperpage{22}
+    \subitem {setting\_up.h}, \hyperpage{18}
+  \item {setting\_up.c}
+    \subitem {setting\_up}, \hyperpage{22}
+  \item {setting\_up.h}
+    \subitem {map\_t}, \hyperpage{16}
+    \subitem {set\_map\_map}, \hyperpage{16}
+    \subitem {set\_map\_pattern}, \hyperpage{17}
+    \subitem {setting\_up}, \hyperpage{18}
+  \item {src/main.c}, \hyperpage{19}
+  \item {src/set\_map.c}, \hyperpage{21}
+  \item {src/setting\_up.c}, \hyperpage{22}
+
+  \indexspace
+
+  \item {width}
+    \subitem {map\_s}, \hyperpage{6}
+
+\end{theindex}

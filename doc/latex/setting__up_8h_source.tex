@@ -1,0 +1,41 @@
+\hypertarget{setting__up_8h_source}{}\doxysection{setting\+\_\+up.\+h}
+\label{setting__up_8h_source}\index{include/setting\_up.h@{include/setting\_up.h}}
+\mbox{\hyperlink{setting__up_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2024}}
+\DoxyCodeLine{3 \textcolor{comment}{** setting\_up.h}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** setting\_up.h}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef SETTING\_UP\_H\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{    \#define SETTING\_UP\_H\_}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{    \#include <stdio.h>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{    \#include <unistd.h>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{    \#include <stdlib.h>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{    \#include <sys/types.h>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{    \#include <sys/stat.h>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{    \#include <fcntl.h>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{    \#include <limits.h>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{    \#include "{}\mbox{\hyperlink{my_8h}{my.h}}"{}}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{23 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\mbox{\hyperlink{structmap__s}{map\_s}} \{}
+\DoxyCodeLine{24     \textcolor{keywordtype}{char} *\mbox{\hyperlink{structmap__s_a98fb1cf1d54a9b16f6274a90c39316ba}{map}};              }
+\DoxyCodeLine{25     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{structmap__s_a9ca4d9b645f7b97d31d9e198d7892baa}{height}};          }
+\DoxyCodeLine{26     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{structmap__s_a7583c6f504e3c1a6f931850e59c5b338}{width}};           }
+\DoxyCodeLine{27     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{structmap__s_a936d4508a8580553fadd86301b29e26f}{bigger\_pos}};      }
+\DoxyCodeLine{28     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{structmap__s_a075795f3b955a97558188c427e9825d0}{bigger\_size}};     }
+\DoxyCodeLine{29 \} \mbox{\hyperlink{setting__up_8h_ae80c6c8b9f9e5f88c65337bb1cd2eb65}{map\_t}};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{37 \textcolor{keywordtype}{int} \mbox{\hyperlink{setting__up_8h_a5154e75436e3a82185eb758c1bb6ff01}{setting\_up}}(\mbox{\hyperlink{structmap__s}{map\_t}} *map);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{47 \textcolor{keywordtype}{int} \mbox{\hyperlink{setting__up_8h_a10a27bf42c782384a7c4eecb08c91c97}{set\_map\_map}}(\mbox{\hyperlink{structmap__s}{map\_t}} *map,}
+\DoxyCodeLine{48     \textcolor{keywordtype}{char} **argv, \textcolor{keywordtype}{char} *buffer, \textcolor{keyword}{struct} stat *filestat);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{57 \textcolor{keywordtype}{int} \mbox{\hyperlink{setting__up_8h_a2e1c0cb4f6d4c13b148b252667814b0d}{set\_map\_pattern}}(\mbox{\hyperlink{structmap__s}{map\_t}} *map, \textcolor{keywordtype}{char} *size, \textcolor{keywordtype}{char} *pattern);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* SETTING\_UP\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}
