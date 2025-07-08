@@ -1,0 +1,14 @@
+*~
+#*#
+*.o
+*.a
+a.out
+*.log
+run_tests
+run
+.vscode
+unit_tests
+example_files
+B-CPE-110_Setting_Up_Generator.pl
+test_script.sh
+setting_up
